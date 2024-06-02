@@ -86,33 +86,32 @@
 
   .layout {
     min-height: 100vh;
-  }
-  
-  
-  .hero-section {
+}
+
+.hero-section {
     position: relative;
-  }
-  
-  .hero-image-container {
+}
+
+.hero-image-container {
     width: 100%;
     height: 400px;
     overflow: hidden;
-  }
-  
-  .hero-image {
+}
+
+.hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-  }
-  
-  .site-layout-content {
+}
+
+.site-layout-content {
     background: #fff;
     padding: 24px;
     min-height: 280px;
-  }
-  
-  .event-photo {
+}
+
+.event-photo {
     height: 200px;
     background-color: #f0f0f0;
     display: flex;
@@ -120,8 +119,26 @@
     justify-content: center;
     font-size: 24px;
     color: #ccc;
-  }
-  
+}
+
+@media (max-width: 576px) {
+    .hero-image-container {
+        height: 200px;
+    }
+
+    .event-photo {
+        height: 150px;
+        font-size: 18px;
+    }
+
+    .site-layout-content {
+        padding: 16px;
+    }
+
+    .ant-card {
+        margin-bottom: 16px;
+    }
+}
 
   
   /*========================== WHO ARE WE======================= */

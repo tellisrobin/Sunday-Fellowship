@@ -1,26 +1,63 @@
+
+/* HEADER */
 /* HEADER */
 
 .nav-link {
-    font-size: 32px;
-  }
+  font-size: 27px; /* Adjusted font size for better mobile display */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .nav-links-container {
-    display: flex;
-    justify-content: flex-end;
-    gap: 35px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px; /* Maintain the gap between links */
+}
+
+.header {
+  height: 110px;
+  background-color: aliceblue;
+  padding: 10px; /* Added padding for better spacing on small screens */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 22px;
+  font-size: 24px; /* Adjust font size for mobile view */
+}
+
+.sidebar {
+  display: none; /* Hide by default */
+}
+
+@media (max-width: 768px) {
+  .nav-links-container {
+      display: none; /* Hide the navigation links on smaller screens */
   }
 
-.header{
-    height:110px;
-    background-color: aliceblue;
+  .sidebar {
+      display: block; /* Show the sidebar (hamburger menu) on smaller screens */
+      font-size: 24px; /* Adjust font size for mobile view */
+      margin-right: 22px;
+  }
+
+  .header {
+      padding: 0 20px; /* Add padding to the header for smaller screens */
+  }
 }
-    
-.logo{
-   
-    margin-left: 22px;
-}
-.sidebar{
-   
-    margin-right: 22px;
+
+@media (max-width: 576px) {
+  .nav-link {
+      font-size: 14px; /* Further adjust font size for very small screens */
+      margin-left: 20px; /* Reduce margin for very small screens */
+      margin-right: 20px; /* Reduce margin for very small screens */
+  }
+
+  .logo {
+      font-size: 20px; /* Further adjust font size for very small screens */
+  }
 }
 
 

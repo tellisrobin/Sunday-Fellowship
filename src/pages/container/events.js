@@ -1,6 +1,5 @@
 import React from 'react';
-import { Layout, Menu, Card, Row, Col, Typography, Button } from 'antd';
-import { FacebookOutlined, InstagramOutlined } from '@ant-design/icons';
+import { Layout, Card, Row, Col, Typography, Button } from 'antd';
 import './contain.css';
 import Image from '../../assets/img.webp';
 
@@ -39,7 +38,7 @@ const EventsPage = () => {
                     <Title>All Upcoming Events</Title>
                     <Row gutter={[16, 16]}>
                         {events.map((event, index) => (
-                            <Col span={8} key={index}>
+                            <Col xs={24} sm={12} md={8} key={index}>
                                 <Card
                                     hoverable
                                     cover={<div className="event-photo">PHOTO</div>}
@@ -54,7 +53,6 @@ const EventsPage = () => {
                     </Row>
                 </div>
             </Content>
-
         </Layout>
     );
 }
