@@ -1,44 +1,35 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AuthProvider } from "./context/auth";
-import Main from "./components/nav/Main";
+
+import Header from "./components/nav/Header";
+import Footer from "./components/nav/footer";
+
+
 import { Toaster } from "react-hot-toast";
 
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import AccountActivate from "./pages/auth/AccountActivate";
-import ForgotPassword from "./pages/auth/ForgotPassword";
-import AccessAccount from "./pages/auth/AccessAcount";
-import Dashboard from "./pages/user/Dashboard";
-import AdCreate from "./pages/user/ad/AdCreate";
-import PrivateRoute from "./components/routes/PrivateRoutes";
+import Home from "./pages/container/Home";
+import Team from './pages/container/team'
+import ContactUs from './pages/container/contactus'
+import WhoWeAre from './pages/container/who_we_are'
+import Events from './pages/container/events'
+
+
+
 
 function App() {
   return (
     <BrowserRouter>
-      <AuthProvider>
-        <Main />
-        <Toaster />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route
-            path="/auth/account-activate/:token"
-            element={<AccountActivate />}
-          />
-          <Route path="/auth/forgot-password" element={<ForgotPassword />} />
-          <Route
-            path="/auth/access-account/:token"
-            element={<AccessAccount />}
-          />
 
-          <Route path="/" element={<PrivateRoute />}>
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="ad/create" element={<AdCreate />} />
-          </Route>
-        </Routes>
-      </AuthProvider>
+      <Header />
+      <Toaster />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/who-we-are" element={<WhoWeAre />} />
+        <Route path="/events" element={<Events />} />
+
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

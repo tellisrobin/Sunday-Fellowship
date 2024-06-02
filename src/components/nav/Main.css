@@ -1,0 +1,46 @@
+/* HEADER */
+
+.nav-link {
+    font-size: 32px;
+  }
+.nav-links-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+  }
+
+.header{
+    height:110px;
+    background-color: aliceblue;
+}
+    
+.logo{
+   
+    margin-left: 22px;
+}
+.sidebar{
+   
+    margin-right: 22px;
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 18px;
+  margin: 0;
+}
+
+  
