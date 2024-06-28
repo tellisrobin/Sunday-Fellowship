@@ -1,6 +1,6 @@
 .content {
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #e5e0da;
 }
 
 .hero-section {
@@ -27,7 +27,7 @@
 
 .welcome-section h1 {
   font-size: 2.5rem;
-  color: #00224e;
+  color: #053246;
 }
 
 .welcome-section p {
@@ -37,13 +37,13 @@
 
 .schedule-button {
   margin-top: 20px;
-  background-color: #00224e;
-  border-color: #00224e;
+  background-color: #053246;
+  border-color: #053246;
 }
 
 .faq-section {
   margin-top: 40px;
-  background-color: #f0f0f0;
+  background-color: #e4e0da;
 }
 
 .faq-section h2 {
@@ -57,7 +57,7 @@
 }
 
 .faq-panel {
-  background-color: #00224e !important;
+  background-color: #053246 !important;
   border-radius: 4px !important;
   margin-bottom: 16px !important;
   border: 0px !important;

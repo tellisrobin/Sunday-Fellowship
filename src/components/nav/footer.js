@@ -1,6 +1,8 @@
-import React from 'react';
-import { Row, Col } from 'antd';
-import './Main.css';
+import React from "react";
+import { Row, Col } from "antd";
+import { FacebookFilled } from "@ant-design/icons";
+import { InstagramFilled } from "@ant-design/icons";
+import "./Main.css";
 
 const Footer = () => {
   return (
@@ -13,7 +15,24 @@ const Footer = () => {
         </Col>
         <Col xs={24} sm={12} md={8} lg={6}>
           <h2>Follow Us</h2>
-          <p>Social Media Icons</p>
+          <div>
+            <a
+              className="custom-link"
+              href="https://www.facebook.com/profile.php?id=61560746183925"
+              target="blank"
+            >
+              <FacebookFilled style={{ fontSize: "42px" }} />
+            </a>
+          </div>
+          <div>
+            <a
+              className="custom-link"
+              href="https://www.instagram.com/sspsalm46"
+              target="blank"
+            >
+              <InstagramFilled style={{ fontSize: "42px" }} />
+            </a>
+          </div>
         </Col>
         <Col xs={24} sm={24} md={8} lg={6}>
           <h2>Contact Us</h2>
