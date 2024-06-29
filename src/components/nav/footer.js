@@ -17,7 +17,7 @@ const Footer = () => {
           <h2>Follow Us</h2>
           <div>
             <a
-              className="custom-link"
+              className="ripple"
               href="https://www.facebook.com/profile.php?id=61560746183925"
               target="blank"
             >
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           <div>
             <a
-              className="custom-link"
+              className="ripple"
               href="https://www.instagram.com/sspsalm46"
               target="blank"
             >
@@ -36,7 +36,7 @@ const Footer = () => {
         </Col>
         <Col xs={24} sm={24} md={8} lg={6}>
           <h2>Contact Us</h2>
-          <p>(937) 435-1428</p>
+          <p className="ripple">(937) 435-1428</p>
         </Col>
       </Row>
     </footer>
