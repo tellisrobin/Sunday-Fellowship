@@ -13,11 +13,11 @@ const Footer = () => {
         </Col>
         <Col xs={24} sm={12} md={8} lg={6}>
           <h2>Follow Us</h2>
-          <p>Social Media Icons</p>
+          <p className="ripple">Social Media Icons</p>
         </Col>
         <Col xs={24} sm={24} md={8} lg={6}>
           <h2>Contact Us</h2>
-          <p>(937) 435-1428</p>
+          <p className="ripple">(937) 435-1428</p>
         </Col>
       </Row>
     </footer>
