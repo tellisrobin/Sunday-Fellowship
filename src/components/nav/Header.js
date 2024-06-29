@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { Col, Row, Drawer } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import "./Main.css"; // Import the CSS file
-import Logo from "../../assets/Psalm46-Logo.jpg";
+import Logo from "../../assets/Psalm46-Logo.png";
 
 function Main() {
   const [drawerVisible, setDrawerVisible] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Button, Collapse } from "antd";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
-import Image from "../../assets/img.webp";
+import Image from "../../assets/HomePageBanner.png";
 import "./home.css";
 
 const { Panel } = Collapse;
