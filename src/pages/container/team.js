@@ -2,6 +2,8 @@ import React from "react";
 import { Row, Col } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import "./contain.css";
+import Wayne from "../../assets/WaynePenrod.jpg";
+import Peggy from "../../assets/PeggyPenrod.jpg";
 
 const teamMembers = [
   {
@@ -28,6 +30,7 @@ const teamMembers = [
     to doing everything in my power to encourage and support the next generation in their walk
     with Christ. After all, there's nothing more fulfilling than being a guiding light for those who
     are embarking on their own spiritual journey.`,
+    image: Wayne,
   },
   {
     name: "Peggy Penrod",
@@ -61,6 +64,7 @@ const teamMembers = [
       together, we may continue to grow in faith and love, drawing ever closer to God and His eternal
       kingdom.
       `,
+    image: Peggy,
   },
 ];
 
@@ -79,7 +83,8 @@ const Team = () => {
       {teamMembers.map((member, index) => (
         <Row key={index} className="team-member" justify="center">
           <Col xs={24} sm={6} md={4} className="team-member-icon">
-            <UserOutlined style={{ fontSize: "80px", color: "#003366" }} />
+            {/* <UserOutlined style={{ fontSize: "80px", color: "#003366" }} /> */}
+            <img src={member.image} alt="Mentor" className="mentor-image" />
           </Col>
           <Col xs={24} sm={18} md={20} className="team-member-info">
             <h2>{member.name}</h2>
